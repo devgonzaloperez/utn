@@ -1,0 +1,12 @@
+$dark-blue: #0e2c36;
+$hover-blue: #014961;
+$facebook-color: #3B5998;
+$twitter-color: #55ACEE;
+$linkedin-color: #007bb5;
+$instagram-color: #125688;
+
+@mixin normalize(){
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

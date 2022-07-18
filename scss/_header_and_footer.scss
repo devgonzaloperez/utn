@@ -1,0 +1,311 @@
+/*------------------------------HEADER AND FOOTER------------------------------*/
+
+@import "variables_and_mixins";
+
+/*Normalize*/
+*{
+    @include normalize();
+}
+
+/*Header*/
+.header{
+    background-color: $dark-blue;
+    color: rgb(235, 231, 228);
+    position: fixed;
+    width: 100%;
+    font-family: "roboto";
+    z-index: 10;
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .header__icon{
+            display: none;
+        }
+        .header__nav{
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background-color: $dark-blue;
+                li{
+                    display: inline-block; /*RWD*/
+                    a{
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.4s linear;
+                        text-decoration: none;
+                        color: rgb(235, 231, 228);
+                    }
+                    a:hover{
+                        color: rgb(235, 231, 228);
+                        background-color: rgb(28, 96, 117);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*Footer*/
+.footer{
+    background-image: url(../images/footer-background.jpeg);
+    background-size: cover;
+    background-position-y: 150px * -1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $dark-blue;
+    .footer__section1{
+        display: flex;
+        padding-top: 40px;
+        figure{
+            margin-left: 70px;
+        }
+        div{
+            width: 25%;
+            margin-left: 50px;
+        }
+        .footer__section1-central, .footer__section1-patagonica{
+            width: 15%;
+        }
+        .footer__section1-central{
+            margin-left: 50px;
+        }
+        .p2{
+            margin-top: 15px;
+        }
+        .footer__section1-newsletter{
+            width: 22%;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .footer__section2{
+        margin-top: 30px;
+        padding-bottom: 20px;
+        .footer__section2-contact{
+            display: flex;
+            height: 90px;
+            align-items: center;
+            .footer__section2-contact-data{
+                width: 50%;
+                p{
+                    float: right;
+                }
+            }
+            .footer__section2-contact-socialmedia{
+                width: 50%;
+                a{
+                    float: left;
+                }
+            }
+            p{
+                width: 50%;
+                text-align: right;
+                margin-right: 20px;
+            }
+            .fa{
+                padding: 20px;
+                font-size: 20px;
+                width: 60px;
+                height: 60px;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+            }
+            .fa-facebook{
+                background: $facebook-color;
+                color: white;
+            }
+            .fa-twitter{
+                background: $twitter-color;
+                color: white;
+            }
+            .fa-linkedin{
+                background: $linkedin-color;
+                color: white;
+            }
+            .fa-instagram{
+                background: $instagram-color;
+                color: white;
+            }  
+            .fa:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    .footer__section3{
+        padding-bottom: 30px;
+    }
+    .footer__section2, .footer__section3{
+        text-align: center;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    p{
+        margin-bottom: 0;
+        line-height: 1.2;
+    }
+    a{
+        color: rgb(92, 92, 173);
+    }
+}
+
+/*------------------------------RWD------------------------------*/
+
+/*Header*/
+@media screen and (max-width: 1180px){
+    .header{
+        .header__container{
+            width: 100%;
+            justify-content: space-evenly;
+            .header__icon{
+                display: block;
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+            }
+            .header__nav{
+                width: 100%;
+                margin-top: 1rem;
+                ul{
+                    display: none;
+                    li{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                ul.show{
+                    display: block;
+                }
+            }
+    
+        }
+    } 
+
+}
+
+@media screen and (max-width: 420px){
+    .header{
+        .header__logo img{
+            width: 200px;
+        }
+    } 
+}
+
+/*Footer*/
+
+@media screen and (max-width: 930px){
+    .footer{
+        background: none;
+        background-color: rgb(235, 231, 228);
+        font-family: Arial, Helvetica, sans-serif;
+        color: $dark-blue;
+        .footer__section1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            figure{
+                margin: 0 auto;
+            }
+            .footer__section1-central{
+                margin-top: 20px;
+            }
+            .footer__section1-central, .footer__section1-patagonica, .footer__section1-newsletter{
+                width: 70%;
+                margin-left: 0px;
+                text-align: center;
+            }
+            .p2{
+                margin-top: 15px;
+                width: 100%;
+            }
+            .footer__section1-newsletter{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .footer__section2{
+            margin-top: 10px;
+            padding-bottom: 20px;
+            .footer__section2-contact{
+                display: flex;
+                flex-direction: column;
+                height: 90px;
+                align-items: center;
+                .footer__section2-contact-data{
+                    width: 100%;
+                    text-align: center;
+                    .footer__phone{
+                        margin-bottom: 2px;
+                    }
+                    p{
+                        width: 100%;
+                        float: none;
+                        text-align: center;
+                    }
+                }
+                .footer__section2-contact-socialmedia{
+                    width: 100%;
+                    margin-top: 20px;
+                    a{
+                        float: none;
+                    }
+                }
+                p{
+                    width: 50%;
+                    text-align: right;
+                    margin-right: 20px;
+                }
+                .fa{
+                    padding: 20px;
+                    font-size: 20px;
+                    width: 60px;
+                    height: 60px;
+                    text-decoration: none;
+                    margin: 5px 2px;
+                    border-radius: 50%;
+                }
+                .fa-facebook{
+                    background: $facebook-color;
+                    color: white;
+                }
+                .fa-twitter{
+                    background: $twitter-color;
+                    color: white;
+                }
+                .fa-linkedin{
+                    background: $linkedin-color;
+                    color: white;
+                }
+                .fa-instagram{
+                    background: $instagram-color;
+                    color: white;
+                }  
+                .fa:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        .footer__section3{
+            padding-top: 70px;
+            padding-bottom: 30px;
+            h4{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        h4{
+            margin-top: 30px;
+        }
+        p{
+            margin-top: 15px;
+        }
+    }
+}

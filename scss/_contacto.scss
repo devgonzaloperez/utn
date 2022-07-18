@@ -1,0 +1,453 @@
+/*------------------------------6. CONTACTO------------------------------*/
+
+.contacto__main{
+    color:#0e2c36;
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/buildings5.jpg);
+    background-size: cover;
+    .contacto__main-section1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(235, 231, 228, 0.5);
+        padding-bottom: 80px;
+        .contacto__means{
+            margin-top: 140px;
+            width: 90%;
+            height: 60%;
+            display: flex;
+            .contacto__means-div1{
+                background-color: rgba(0, 0, 0, 0.2);
+                height: 100%;
+                width: 50%;
+                margin-right: 25px;
+                .phone__flexcontainer{
+                    height: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    .phone{
+                        width: 100%;
+                        span{
+                            font-size: 50px;
+                        }
+                        span:hover{
+                            font-size: 55px;
+                        }
+                        span, h3, p{
+                            margin-top: 15px;
+                        }
+                        p{
+                            font-family: sans-serif;
+                        }
+                        .p2{
+                            margin-top: 2px;
+                        }
+                    }
+                }
+                .e-mail__flexcontainer{
+                    height: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 40px;
+                    .e-mail{
+                        width: 100%;
+                        span{
+                            font-size: 50px;
+                        }
+                        span:hover{
+                            font-size: 55px;
+                        }
+                        span, h3, p{
+                            margin-top: 15px;
+                        }
+                        p{
+                            font-family: sans-serif;
+                        }
+                        .p2{
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+            .contacto__means-div2{
+                background-color: rgba(0, 0, 0, 0.2);
+                height: 100%;
+                width: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                margin-left: 25px;
+                padding: 23px;
+                .contactform__flexcontainer{
+                    width: 100%;
+                    span{
+                        font-size: 50px;
+                    }
+                    span:hover{
+                        font-size: 55px;
+                    }
+                    h3{
+                        margin-bottom: 30px;
+                    }
+                    label{
+                        display: block;
+                        margin-top: 10px;
+                        font-family: sans-serif;
+                        width: 100%;
+                        text-align: left;
+                        margin-left: 5%;
+                    }
+                    input{
+                        margin-top: 10px;
+                        width: 90%;
+                        height: 30px;
+                        color: rgb(14, 44, 54);
+                        background-color: rgba(255, 255, 255, 0.4);
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        border: 0;
+                    }
+                    #mensaje{
+                        resize: none;
+                        margin-top: 10px;
+                        width: 90%;
+                        height: 100px;
+                        color: rgb(14, 44, 54);
+                        background-color: rgba(255, 255, 255, 0.4);
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        border: 0;
+                    }
+                    /*Remove Autofocus*/
+                    textarea:focus, input:focus{
+                        outline: none;
+                    }
+                    button{
+                        margin-top: 20px;
+                        width: 70%;
+                        height: 40px;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 16px;
+                        color: rgb(186, 186, 204);
+                        background-color: #0e2c36;
+                        border: 0;
+                    }
+                    button:hover{
+                        background-color: #014961;
+                    }
+                    button:active{
+                        position:relative;
+	                    top:1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------RWD------------------------------*/
+@media screen and (max-width: 1000px){
+    .contacto__main{
+        color:#0e2c36;
+        font-family: 'Roboto', sans-serif;
+        .contacto__main-section1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 60px;
+            background: url(../images/buildings5.jpg);
+            background-size: cover;
+            .contacto__means{
+                margin-top: 140px;
+                width: 90%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .contacto__means-div1{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    height: 100%;
+                    width: 80%;
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                    .phone__flexcontainer{
+                        height: 50%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        .phone{
+                            width: 100%;
+                            span{
+                                font-size: 50px;
+                            }
+                            span:hover{
+                                font-size: 55px;
+                            }
+                            span, h3, p{
+                                margin-top: 15px;
+                            }
+                            p{
+                                font-family: sans-serif;
+                            }
+                            .p2{
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                    .e-mail__flexcontainer{
+                        height: 50%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 40px;
+                        .e-mail{
+                            width: 100%;
+                            span{
+                                font-size: 50px;
+                            }
+                            span:hover{
+                                font-size: 55px;
+                            }
+                            span, h3, p{
+                                margin-top: 15px;
+                            }
+                            p{
+                                font-family: sans-serif;
+                            }
+                            .p2{
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+                .contacto__means-div2{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    height: 100%;
+                    width: 80%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0px;
+                    padding: 23px;
+                    .contactform__flexcontainer{
+                        width: 100%;
+                        span{
+                            font-size: 50px;
+                        }
+                        span:hover{
+                            font-size: 55px;
+                        }
+                        h3{
+                            margin-bottom: 30px;
+                        }
+                        label{
+                            display: block;
+                            margin-top: 10px;
+                            font-family: sans-serif;
+                            width: 100%;
+                            text-align: left;
+                            margin-left: 5%;
+                        }
+                        input{
+                            margin-top: 10px;
+                            width: 90%;
+                            height: 30px;
+                            color: rgb(14, 44, 54);
+                            background-color: rgba(255, 255, 255, 0.4);
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            border: 0;
+                        }
+                        #mensaje{
+                            resize: none;
+                            margin-top: 10px;
+                            width: 90%;
+                            height: 100px;
+                            color: rgb(14, 44, 54);
+                            background-color: rgba(255, 255, 255, 0.4);
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            border: 0;
+                        }
+                        /*Remove Autofocus*/
+                        textarea:focus, input:focus{
+                            outline: none;
+                        }
+                        button{
+                            margin-top: 20px;
+                            width: 70%;
+                            height: 40px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 16px;
+                            color: rgb(186, 186, 204);
+                            background-color: #0e2c36;
+                            border: 0;
+                        }
+                        button:hover{
+                            background-color: #014961;
+                        }
+                        button:active{
+                            position:relative;
+                            top:1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .contacto__main{
+        color:#0e2c36;
+        font-family: 'Roboto', sans-serif;
+        .contacto__main-section1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 60px;
+            background: url(../images/buildings5.jpg);
+            background-size: cover;
+            .contacto__means{
+                margin-top: 140px;
+                width: 90%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .contacto__means-div1{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    height: 100%;
+                    width: 90%;
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                    .phone__flexcontainer{
+                        height: 50%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        .phone{
+                            width: 100%;
+                            span{
+                                font-size: 50px;
+                            }
+                            span:hover{
+                                font-size: 55px;
+                            }
+                            span, h3, p{
+                                margin-top: 15px;
+                            }
+                            p{
+                                font-family: sans-serif;
+                            }
+                            .p2{
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                    .e-mail__flexcontainer{
+                        height: 50%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 40px;
+                        .e-mail{
+                            width: 100%;
+                            span{
+                                font-size: 50px;
+                            }
+                            span:hover{
+                                font-size: 55px;
+                            }
+                            span, h3, p{
+                                margin-top: 15px;
+                            }
+                            p{
+                                font-family: sans-serif;
+                            }
+                            .p2{
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+                .contacto__means-div2{
+                    background-color: rgba(0, 0, 0, 0.2);
+                    height: 100%;
+                    width: 90%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0px;
+                    padding: 23px;
+                    .contactform__flexcontainer{
+                        width: 100%;
+                        span{
+                            font-size: 50px;
+                        }
+                        span:hover{
+                            font-size: 55px;
+                        }
+                        h3{
+                            margin-bottom: 30px;
+                        }
+                        label{
+                            display: block;
+                            margin-top: 10px;
+                            font-family: sans-serif;
+                            width: 100%;
+                            text-align: left;
+                            margin-left: 5%;
+                        }
+                        input{
+                            margin-top: 10px;
+                            width: 90%;
+                            height: 30px;
+                            color: rgb(14, 44, 54);
+                            background-color: rgba(255, 255, 255, 0.4);
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            border: 0;
+                        }
+                        #mensaje{
+                            resize: none;
+                            margin-top: 10px;
+                            width: 90%;
+                            height: 100px;
+                            color: rgb(14, 44, 54);
+                            background-color: rgba(255, 255, 255, 0.4);
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            border: 0;
+                        }
+                        /*Remove Autofocus*/
+                        textarea:focus, input:focus{
+                            outline: none;
+                        }
+                        button{
+                            margin-top: 20px;
+                            width: 70%;
+                            height: 40px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 16px;
+                            color: rgb(186, 186, 204);
+                            background-color: #0e2c36;
+                            border: 0;
+                        }
+                        button:hover{
+                            background-color: #014961;
+                        }
+                        button:active{
+                            position:relative;
+                            top:1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

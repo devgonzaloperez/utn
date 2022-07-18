@@ -1,0 +1,35 @@
+/*------------------------------3. DEPARTAMENTOS------------------------------*/
+
+.departamentos__main{
+    color: #0e2c36;
+    .departamentos__main-section1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 100px;
+        background-color: rgb(235, 231, 228);
+    }
+    .departamentos__main-section1-div1{
+        margin-top: 150px;
+        width: 80%;
+        p{
+            font-family: sans-serif;
+        }
+    }
+    .departamentos__main-section1-div2{
+        width: 80%;
+        button{
+            margin-top: 10px;
+            transition: all 0.4s linear;
+        }
+        button:hover{
+            background-color: rgba(28, 96, 117, 0.3);
+            font-size: 17px;
+        }
+        p{
+            font-family: sans-serif;
+        }
+    }
+}

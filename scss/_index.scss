@@ -1,0 +1,223 @@
+/*------------------------------1. INDEX------------------------------*/
+
+.index__main{
+    .index__main-section1{
+        z-index: 1;
+        .slide1-content{
+            width: 70%;
+            margin-bottom: 30%;
+            margin-left: -5%;
+            color: #0e2c36;
+            font-family: "Roboto";
+            letter-spacing: 2px;
+            .slide1-content-p{
+                font-size: 30px;
+            }
+            button{
+                height: 40px;
+                width: 140px;
+                border: none;
+                background-color: rgb(28, 96, 117);
+            }
+            button:hover{
+                background-color: #0e2c36;
+            }
+            button:active{
+                position:relative;
+                top:1px;
+            }
+        }
+        .slide2-content{
+            width: 70%;
+            margin-bottom: 34%;
+            margin-left: 8%;
+            color: #0e2c36;
+            font-family: "Roboto";
+            letter-spacing: 2px;
+            .slide2-content-p{
+                font-size: 30px;
+            }
+            button{
+                height: 40px;
+                width: 260px;
+                border: none;
+                background-color: rgb(28, 96, 117);
+            }
+            button:hover{
+                background-color: #0e2c36;
+            }
+            button:active{
+                position:relative;
+                top:1px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: rgb(248, 249, 251);
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            display:inline-block;
+            width:100%;
+            height:100%;
+            margin-top: 8px;
+        }
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0e2c36' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }   
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff0e2c36' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+    }
+    .index__main-section2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Roboto";
+        background-color: rgb(235, 231, 228);
+        color: #0e2c36;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .index__main-section2-div1{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            .description-MRKG, .accordion-container{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .description-MRKG h2, .description-MRKG p{
+                width: 70%;
+            }
+            .description-MRKG h2{
+                margin-bottom: 40px;
+            }
+            .description-MRKG p{
+                font-family: sans-serif;
+            }
+            .accordion{
+                width: 90%;
+            }
+            .accordion-item{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .accordion-body{
+                font-family: sans-serif;
+            }
+        }
+    }
+    .index__main-section3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        div{
+            /*border: 1px solid black;*/
+            margin: 0px 20px 0px 20px;
+            text-align: center;
+            color: #0e2c36;
+            span{
+                font-size: 40px;
+            }
+            h2{
+                font-family: 'Roboto', sans-serif;
+            }
+            p{
+                margin-top: 20px;
+                font-family: Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}
+
+/*------------------------------RWD------------------------------*/
+@media screen and (max-width: 1180px){
+    .index__main{
+        .index__main-section1{
+            display: none;
+        }
+        .index__main-section2{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto";
+            background-color: rgb(235, 231, 228);
+            color: #0e2c36;
+            padding-top: 140px;
+            padding-bottom: 60px;
+            .index__main-section2-div1{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                .description-MRKG, .accordion-container{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .description-MRKG h2, .description-MRKG p{
+                    width: 100%;
+                }
+                .description-MRKG h2{
+                    margin-bottom: 30px;
+                }
+                .description-MRKG p{
+                    font-family: sans-serif;
+                }
+                .accordion{
+                    width: 100%;
+                }
+                .accordion-item{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .accordion-body{
+                    font-family: sans-serif;
+                }
+            }
+        }
+        .index__main-section3{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 400px);
+            grid-template-rows: 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            div{
+                /*border: 1px solid black;*/
+                margin: 0px 20px 0px 20px;
+                text-align: center;
+                color: #0e2c36;
+                span{
+                    font-size: 40px;
+                }
+                h2{
+                    font-family: 'Roboto', sans-serif;
+                }
+                p{
+                    margin-top: 20px;
+                    font-family: Geneva, Verdana, sans-serif;
+                }
+            }
+            .index__main-section3-feature3{
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
